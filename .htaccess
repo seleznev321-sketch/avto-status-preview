@@ -1,0 +1,82 @@
+# Сгенерировано scripts/make-htaccess.mjs — правки вносить в скрипт.
+AddDefaultCharset utf-8
+Options -Indexes
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://avto-status27.ru%{REQUEST_URI} [L,R=301]
+
+# Старый сайт: разделы «Сведений» и страницы
+RewriteRule ^Articles/Common/?$ /sveden/ [NC,L,R=301]
+RewriteRule ^Home/About/?$ / [NC,L,R=301]
+RewriteRule ^Identity/ / [NC,L,R=301]
+RewriteRule ^Articles/Details/1/?$ /sveden/common/ [NC,L,R=301]
+RewriteRule ^Articles/Details/2/?$ /sveden/struct/ [NC,L,R=301]
+RewriteRule ^Articles/Details/3/?$ /sveden/document/ [NC,L,R=301]
+RewriteRule ^Articles/Details/4/?$ /sveden/education/ [NC,L,R=301]
+RewriteRule ^Articles/Details/5/?$ /sveden/employees/ [NC,L,R=301]
+RewriteRule ^Articles/Details/6/?$ /sveden/objects/ [NC,L,R=301]
+RewriteRule ^Articles/Details/7/?$ /sveden/grants/ [NC,L,R=301]
+RewriteRule ^Articles/Details/8/?$ /sveden/catering/ [NC,L,R=301]
+RewriteRule ^Articles/Details/9/?$ /sveden/paid_edu/ [NC,L,R=301]
+RewriteRule ^Articles/Details/10/?$ /sveden/budget/ [NC,L,R=301]
+RewriteRule ^Articles/Details/11/?$ /sveden/vacant/ [NC,L,R=301]
+RewriteRule ^Articles/Details/12/?$ /sveden/objects/ [NC,L,R=301]
+RewriteRule ^Articles/Details/13/?$ /sveden/inter/ [NC,L,R=301]
+RewriteRule ^Articles/Details/14/?$ /sveden/objects/ [NC,L,R=301]
+RewriteRule ^Articles/Details/15/?$ /sveden/objects/ [NC,L,R=301]
+
+# Старый сайт: документы /shared/document/<имя>.pdf → /docs/<новое имя>
+Redirect 301 "/shared/document/Положение ПЕДСОВЕТ.pdf" /docs/polozhenie-o-pedsovete.pdf
+Redirect 301 "/shared/document/УСТАВ школа.pdf" /docs/ustav.pdf
+Redirect 301 "/shared/document/СВИДЕТЕЛЬСТВО о регистрации.pdf" /docs/svidetelstvo-o-registracii.pdf
+Redirect 301 "/shared/document/ПРАВИЛА ВНУТРЕННЕГО РАСПОРЯДКА ДЛЯ ОБУЧАЮЩИХСЯ.pdf" /docs/pravila-vnutrennego-rasporyadka-obuchayushchihsya.pdf
+Redirect 301 "/shared/document/ПРАВИЛА ВНУТРЕННЕГО ТРУДОВОГО РАСПОРЯДКА.pdf" /docs/pravila-vnutrennego-trudovogo-rasporyadka.pdf
+Redirect 301 "/shared/document/для пункта №3 Отчет самообследование 2024.pdf" /docs/otchet-samoobsledovanie-2024.pdf
+Redirect 301 "/shared/document/Отчет о самообследовании 2025 год.pdf" /docs/otchet-samoobsledovanie-2025.pdf
+Redirect 301 "/shared/document/для пункта №3 ПОЛОЖЕНИЕ О ПРАВИЛАХ ПРИЕМА, ПЕРЕВОДА, ОТЧИСЛЕНИЯ, и ВОССТАНОВЛЕНИЯ ОБУЧАЮЩЕГОСЯ.pdf" /docs/polozhenie-priem-perevod-otchislenie.pdf
+Redirect 301 "/shared/document/для пункта №3 положение о промежуточной и итоговой аттестации.pdf" /docs/polozhenie-attestaciya.pdf
+Redirect 301 "/shared/document/для пункта №3 РЕЖИМ ЗАНЯТИЙ.jpg" /docs/rezhim-zanyatiy.jpg
+Redirect 301 "/shared/document/Приказ о вступлении в должность директора Зайдулина Рената Талгатовича.pdf.pdf" /docs/prikaz-o-vstuplenii-v-dolzhnost-direktora.pdf
+Redirect 301 "/shared/document/пункт № 3 Предостережение_ЧОУ ДПО ШВ Авто-Статус.pdf" /docs/predosterezhenie-minobr-2024-339.pdf
+Redirect 301 "/shared/document/для пункта №4 ПОЛОЖЕНИЕ О ЯЗЫКАХ ОБРАЗОВАНИЯ.pdf" /docs/polozhenie-o-yazykah-obrazovaniya.pdf
+Redirect 301 "/shared/document/Реализуемы образовательные программы.pdf" /docs/realizuemye-programmy.pdf
+Redirect 301 "/shared/document/Категория А подписанная для сайта.pdf" /docs/rabochaya-programma-kat-a.pdf
+Redirect 301 "/shared/document/Описание реализуемой программы профессиональной подготовки водителей  транспортных средств категории В.pdf" /docs/opisanie-programmy-kat-b.pdf
+Redirect 301 "/shared/document/Программа кат В для сайта 2026.pdf" /docs/rabochaya-programma-kat-b-2026.pdf
+Redirect 301 "/shared/document/Для сайта подписанная с С на В.pdf" /docs/rabochaya-programma-c-na-b.pdf
+Redirect 301 "/shared/document/пункт №4Реализуемые_образовательные_программы.pdf" /docs/realizuemye-programmy-v2.pdf
+Redirect 301 "/shared/document/Программа для сайта до 18 лет подписанная.pdf" /docs/rabochaya-programma-kat-b-do-18.pdf
+Redirect 301 "/shared/document/С АКПП на МКПП подписанная для сайта.pdf" /docs/rabochaya-programma-akpp-na-mkpp.pdf
+Redirect 301 "/shared/document/ОВЗ подписанная для сайта.pdf" /docs/rabochaya-programma-kat-b-ovz.pdf
+Redirect 301 "/shared/document/пункт №4 Рабочий учебный план категории В.pdf" /docs/uchebnyy-plan-kat-b.pdf
+Redirect 301 "/shared/document/пункт №4рабочий учебный план с С на В.pdf" /docs/uchebnyy-plan-c-na-b.pdf
+Redirect 301 "/shared/document/пункт №4рабочий учебный план для 18 лет.pdf" /docs/uchebnyy-plan-kat-b-do-18.pdf
+Redirect 301 "/shared/document/пункт №4календарный учебный график кат В.pdf" /docs/kalendarnyy-grafik-kat-b.pdf
+Redirect 301 "/shared/document/пункт №4календарный учебный график с С на В.pdf" /docs/kalendarnyy-grafik-c-na-b.pdf
+Redirect 301 "/shared/document/пункт №4календарный учебный график для 18 лет.pdf" /docs/kalendarnyy-grafik-kat-b-do-18.pdf
+Redirect 301 "/shared/document/пункт №4методические рекомендации по организации учебного процесса.pdf" /docs/metodicheskie-rekomendacii.pdf
+Redirect 301 "/shared/document/пункт №4Информация о численности обучающихся.pdf" /docs/chislennost-obuchayushchihsya.pdf
+Redirect 301 "/shared/document/пункт №4Выписка из реестра лицензий № Л035-01286-27-01097286.pdf" /docs/vypiska-iz-reestra-licenziy.pdf
+Redirect 301 "/shared/document/пункт №5Руководящий состав, преподаватели.pdf" /docs/pedagogicheskiy-sostav.pdf
+Redirect 301 "/shared/document/пункт №6МАТ-ТЕХ ОБЕСПЕЧЕНИЕ.pdf" /docs/materialno-tehnicheskoe-obespechenie.pdf
+Redirect 301 "/shared/document/для пункта № 2ПОЛОЖЕНИЕ о стипендии.pdf" /docs/polozhenie-o-merah-podderzhki.pdf
+Redirect 301 "/shared/document/Положение о платных услугах.pdf" /docs/polozhenie-o-platnyh-uslugah.pdf
+Redirect 301 "/shared/document/Прейскурант .pdf" /docs/preyskurant-2026-03-01.pdf
+Redirect 301 "/shared/document/образец ДОГОВОР С ОБУЧАЮЩИМИСЯ.pdf" /docs/dogovor-obrazec.pdf
+Redirect 301 "/shared/document/образец Договор несовершеннолетних.pdf" /docs/dogovor-obrazec-nesovershennoletnie.pdf
+Redirect 301 "/shared/document/пункт № 10 План финансово-хозяйственной деятельности на 2024 год.pdf" /docs/plan-fhd-2024.pdf
+Redirect 301 "/shared/document/пункт №12Доступная среда для людей с ОВЗ и инвалидов.pdf" /docs/dostupnaya-sreda.pdf
+Redirect 301 "/shared/document/Заключение Роспотребнадзора.pdf" /docs/zaklyuchenie-rospotrebnadzora.pdf
+Redirect 301 "/shared/document/Заключение Роспотребнадзор Полярная,57.pdf" /docs/zaklyuchenie-rospotrebnadzora-polyarnaya-57.pdf
+Redirect 301 "/shared/document/Заключение специалиста по ПБ.pdf" /docs/zaklyuchenie-pozharnaya-bezopasnost.pdf
+RedirectMatch 301 ^/shared/document/ /sveden/document/
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+</IfModule>
