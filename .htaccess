@@ -61,7 +61,7 @@ Redirect 301 "/shared/document/пункт №4методические реко�
 Redirect 301 "/shared/document/пункт №4Информация о численности обучающихся.pdf" /docs/chislennost-obuchayushchihsya.pdf
 Redirect 301 "/shared/document/пункт №4Выписка из реестра лицензий № Л035-01286-27-01097286.pdf" /docs/vypiska-iz-reestra-licenziy.pdf
 Redirect 301 "/shared/document/пункт №5Руководящий состав, преподаватели.pdf" /docs/pedagogicheskiy-sostav.pdf
-Redirect 301 "/shared/document/пункт №6МАТ-ТЕХ ОБЕСПЕЧЕНИЕ.pdf" /docs/materialno-tehnicheskoe-obespechenie.pdf
+Redirect 301 "/shared/document/пункт №6МАТ-ТЕХ ОБЕСПЕЧЕНИЕ.pdf" /sveden/objects/
 Redirect 301 "/shared/document/для пункта № 2ПОЛОЖЕНИЕ о стипендии.pdf" /docs/polozhenie-o-merah-podderzhki.pdf
 Redirect 301 "/shared/document/Положение о платных услугах.pdf" /docs/polozhenie-o-platnyh-uslugah.pdf
 Redirect 301 "/shared/document/Прейскурант .pdf" /docs/preyskurant-2026-03-01.pdf
